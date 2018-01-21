@@ -2,8 +2,8 @@ service: serverless-crud
 
 provider:
   name: aws
-  runtime: nodejs4.3
-  region: us-east-1
+  runtime: nodejs6.10
+  region: ap-northeast-2
   stage: dev
   iamRoleStatements:
     - Effect: Allow
@@ -15,7 +15,10 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:us-east-1:*:*"
+      Resource: "arn:aws:dynamodb:ap-northeast-2:*:*"
+
+plugins:
+  - serverless-offline
 
 functions:
   create:
