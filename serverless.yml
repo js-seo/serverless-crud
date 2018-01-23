@@ -60,7 +60,7 @@ functions:
 
 resources:
   Resources:
-    TodosDynamoDbTable:
+    PostDynamoDbTable:
       Type: 'AWS::DynamoDB::Table'
       DeletionPolicy: Retain
       Properties:
