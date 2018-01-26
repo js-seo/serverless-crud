@@ -29,7 +29,8 @@
   - Admin 권한, Programmatic Access
   - Key, Secret을 적어둡시다.
 - AWS CLI 설치 및 설정
-  - AWS 설치: `pip install awscli --upgrade —user`
+  - AWS CLI 설치 (macOS 기준)
+    - https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-install-macos.html
     - Check installation : `aws --version`
   - AWS 설정
     - `aws configure --profile serverless-seminar`
